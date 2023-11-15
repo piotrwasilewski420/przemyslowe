@@ -1,0 +1,73 @@
+{
+  "info": {
+    "_postman_id": "7a857812-7797-49ba-a63e-560be54de86c",
+    "name": "Tests API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+    "_exporter_id": "24296058"
+  },
+  "item": [
+    {
+      "name": "Get all cars",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:8080/cars/"
+      },
+      "response": []
+    },
+    {
+      "name": "Get car",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "http://localhost:8080/cars/130dba7f-9157-42e2-97ea-6cf5ed633ca6"
+      },
+      "response": []
+    },
+    {
+      "name": "Add car",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Polonez\",\r\n    \"id\": \"130dba7f-9157-42e2-97ea-6cf5ed633ca6\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "http://localhost:8080/cars/130dba7f-9157-42e2-97ea-6cf5ed633ca6"
+      },
+      "response": []
+    },
+    {
+      "name": "Delete car",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "http://localhost:8080/cars/130dba7f-9157-42e2-97ea-6cf5ed633ca6"
+      },
+      "response": []
+    },
+    {
+      "name": "Update car",
+        "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+            "mode": "raw",
+            "raw": "{\r\n    \"name\": \"Polonez\",\r\n    \"id\": \"130dba7f-9157-42e2-97ea-6cf5ed633ca6\"\r\n}",
+            "options": {
+                "raw": {
+                "language": "json"
+                }
+            }
+            },
+            "url": "http://localhost:8080/cars/130dba7f-9157-42e2-97ea-6cf5ed633ca6"
+        },
+        "response": []
+    }
+  ]
+}
